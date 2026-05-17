@@ -12,9 +12,16 @@
   "host_permissions": [
     "*://api.bilibili.com/*"
   ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "TabulaBili 推荐设置"
+    "default_title": "TabulaBili 推荐设置",
+    "default_icon": "icon.png"
   },
   "declarative_net_request": {
     "rule_resources": [
