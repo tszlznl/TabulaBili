@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "TabulaBili (初见哔哩)",
+  "version": "1.0",
+  "author": "wangdaodao",
+  "description": "保持哔哩哔哩账号登录状态以享受高清画质与无弹窗体验，同时在底层拦截并重置首页推荐流为无个性化纯净访客模式，助你彻底打破算法信息茧房，探索全站海量优质热门视频。",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://api.bilibili.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "TabulaBili 推荐设置"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "cookie",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||api.bilibili.com/x/web-interface*index/top*rcmd*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]
